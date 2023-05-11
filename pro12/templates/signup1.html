@@ -1,0 +1,11 @@
+
+{% extends 'base.html' %}
+
+{% block body_block %}
+<h1>signup page</h1>
+<form method="post">
+  {% csrf_token %}
+    {{form.as_ul}}
+    <input type="submit" value="signup1"></form>
+  {% endblock %}
+  

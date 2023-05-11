@@ -1,0 +1,16 @@
+@import url('https://fonts.googlepis.com/css2?family=Lobster&display=swap');
+body{
+    background: url('../image/im.jpg') no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    font-family: 'Lobster',cursive;
+     background: -webkit-linear-gradient(rgb(255, 187, 0),#00bbff); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+form{
+    margin-left: 295px;
+}
+a{background: -webkit-linear-gradient(rgb(255, 187, 0),#00bbff);}
