@@ -1,0 +1,313 @@
+/*--------------------- navigation-------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+span{color: #f1a809}
+h2{font-family: 'Abril Fatface', cursive;
+  color:  #f0e76b;
+}
+
+ul li a {
+  color:   #f1a809;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  /* -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding-left: 10px; */
+  margin-left: 50px;
+}
+
+ul li a:hover {
+  color:  #f0e76b;
+} 
+
+
+/* ---------------loginpage-------------------------*/
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(243, 233, 233, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #f1a809;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color:  #f1a809;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background:  #f1a809;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px  #f1a809;
+              
+              
+}
+.login-box button{
+  position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    background-color: #f1a809;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #fff;
+    box-shadow: 0.5em 0.5em 0.5em #0000004d;
+
+}
+.login-box button::before{
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg,#f7e864 0%,#f7e864 50%,#f0c85cb0 50%,#f0c85cb0);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em #f7e864;
+  transition: 0.3s;
+}
+.login-box button:hover::before{
+  width: 1.6em;
+  height: 1.6em;
+}
+.login-box button:active{
+  box-shadow: 0.2em 0.2em 0.3em #f7e864;
+  transform: translate(0.1em,0.1em);
+}
+
+
+
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+/* signup page */
+.space h1{text-align: center;
+  padding: 10px;
+  color: #f3e34f;
+  font-family: "Sofia", sans-serif;
+}
+
+
+.space{position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(243, 233, 233, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;}
+  .space  button{position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    background-color: #f1a809;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #fff;
+    box-shadow: 0.5em 0.5em 0.5em #0000004d;
+
+  }
+  .space  button::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg,#f7e864 0%,#f7e864 50%,#f0c85cb0 50%,#f0c85cb0);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em #f7e864;
+    transition: 0.3s;
+  }
+  .space .reg button:hover::before{
+    width: 1.6em;
+    height: 1.6em;
+  }
+  .space  button:active{
+    box-shadow: 0.2em 0.2em 0.3em #f7e864;
+    transform: translate(0.1em,0.1em);
+  }
+  /* ----------------content----------------------- */
+  .cont{
+    background: url('../image/lib.jpg')  no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .con{
+    padding: 120px 90px;
+    text-align: center;
+    font-size: larger; 
+    width: 500px;
+    height: 450px;
+    background: #f7a38e;
+    opacity: .5;
+    color:black;
+    margin: 200px 600px;
+  }
+    
+  
+  .hom h2{ text-align: center;
+    text-transform: capitalize;
+  }
+  /*------------------- register --------------------------*/
+  .reg h1{text-align: center;
+    padding-top: 15%;
+  }
+  .reg label{color: white;}
+  .reg input{background-color:hwb(60 75% 2%) ;
+    opacity: .4;
+  }
+  .reg button{position: relative;
+    font-size: 1.2em;
+    padding: 0.7em 1.4em;
+    background-color: #f1a809;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5em;
+    color: #fff;
+    box-shadow: 0.5em 0.5em 0.5em #0000004d;
+
+  }
+  .reg button::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg,#f7e864 0%,#f7e864 50%,#f0c85cb0 50%,#f0c85cb0);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em #f7e864;
+    transition: 0.3s;
+  }
+  .reg button:hover::before{
+    width: 1.6em;
+    height: 1.6em;
+  }
+   .reg button:active{
+    box-shadow: 0.2em 0.2em 0.3em #f7e864;
+    transform: translate(0.1em,0.1em);
+  }
+  /* location css */
+  .loc{padding-top: 200px;
+    text-align: center;
+    padding-bottom: 140px;}
+    
+     h1{color:  #f1a809;}
+     footer {
+      text-align:center;
+      padding: 5px;
+      background-color: #f1a809;
+      color: #000;
+  }
+  .image{background-color: #f0e76b;}

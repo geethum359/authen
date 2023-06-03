@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+<div class="container reg">
+<h1>Library Membership Form</h1>
+<form method="post">
+  {% csrf_token %}
+
+    <div class="form-row">
+      <div class="col-lg">
+        <label>First Name</label>
+        <input type="text"  name="fn" class="form-control">
+      </div>
+      <div class="col-lg">
+        <label>Last Name</label>
+        <input type="text" name="ln" class="form-control">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-lg">
+        <label>Date Of Brith</label>
+        <input type="text"  name="d" class="form-control" >
+      </div>
+      <div class="col-lg">
+        <label>Gender</label>
+        <input type="text" name="g" class="form-control">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-lg">
+        <label>Your Email</label>
+        <input type="text"  name="e" class="form-control" >
+      </div>
+      <div class="col-lg">
+        <label>Phone Number</label>
+        <input type="text" name="ph" class="form-control">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-lg">
+        <label>Address</label>
+        <input type="text-box" name="a" class="form-control">
+      </div>
+    </div>
+  </form>
+  <button type"submit"> ADD A MEMBER</button>
+</div>
+  {% endblock %}
+
+  

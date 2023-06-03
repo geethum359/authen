@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+
+    {% block body_block %}
+    <div class-="container-fluid cont image">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form method="POST">
+              {% csrf_token %}
+              <div class="user-box">
+                <input type="text" name="n" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="p" required="">
+                <label>Password</label>
+              </div>
+              
+              <button type="submit">LogIn</button>
+              <a href="{% url 'password_reset' %}">forgot password</a>
+            </form>
+          </div>
+        </div>
+        {% endblock %}
+      </div>
+    </body>
+</html>
